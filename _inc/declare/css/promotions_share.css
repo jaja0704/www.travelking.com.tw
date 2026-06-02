@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+.mast_width{position: relative}
+
+/* 選單 */
+.menu_bar{font-size: 16px; position:relative;z-index: 10;}
+.mobile_nav{ display: none;}
+.relative .menu_bar{position:absolute;bottom:0;right:0;width:15em;}
+
+/* 分享跟語言鈕 */
+ul.share_bar{ position:absolute; top:0; right:0;margin:0 3px 0 0;}
+.relative ul.share_bar{top: auto; bottom:0.2em;}
+ul.share_bar li {
+	display: inline-block;
+	padding: 5px 0;
+	vertical-align: middle;
+}
+ul.share_bar li a {overflow: hidden;
+	padding: 0;
+	display: block;
+	width: 30px; height:30px;border-radius: 50%;
+}
+.svgicon {
+	 float:left; display:block;width:100%; height:100%;
+    fill: currentcolor;
+    stroke: currentcolor;border-radius: 50%;
+    stroke-width: 0;}
+	ul.share_bar li a{color:#000;}
+	ul.share_bar li a img {width:100%; height:100%;}
+	ul.share_bar li a:hover{ color:#000}
+ul.share_bar li.t_icon a { background-color:#00ABF0}
+ul.share_bar li.t_icon a:hover{background-color:#0089DD}
+ul.share_bar li.f_icon a {background-color:#305699}
+ul.share_bar li.f_icon a:hover{background-color:#23498b}
+ul.share_bar li.g_icon a {background-color:#E01812}
+ul.share_bar li.g_icon a:hover{background-color:#c20600}
+ul.share_bar li.line_icon a{background-color:#0C0}
+ul.share_bar li.line_icon a:hover{background-color:#090}
+ul.share_bar li.share_icon a{background-color:#690}
+ul.share_bar li.share_icon a:hover{background-color:#360}
+ul.share_bar li.gliked_icon a{background-color:#E01812}
+ul.share_bar li.gliked_icon a:hover{background-color:#c20600}
+ul.share_bar li.fbliked_icon a{background-color:#305699}
+ul.share_bar li.fbliked_icon a:hover{background-color:#23498b}
+ul.share_bar li.p_icon a{background-color:#FF7300}
+ul.share_bar li.p_icon a:hover{background-color:#FF4E00}
+ul.share_bar li.weibo_icon a{background-color:#CCC}
+ul.share_bar li.weibo_icon a:hover{background-color:#999}
+ul.share_bar li.instagram_icon a{background-color:#125688}
+ul.share_bar li.instagram_icon a:hover{background-color:#084870}
+
+
+ul.share_bar li.language_en a,
+ul.share_bar li.language_tw a,
+ul.share_bar li.language_ch a {color:#666;background-color:#fff; border:1px solid #999}
+ul.share_bar li.language_en a:hover,
+ul.share_bar li.language_tw a:hover,
+ul.share_bar li.language_ch a:hover{color:#000;border:1px solid #666}
+
+@media screen and (max-width:970px){
+
+/*選單*/
+.mobile_menu_button { width:1em;height:1em;
+	display: block;
+	z-index: 50;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin:0;font-size:60px;
+}
+.mobile_menu_button span, .mobile_menu_button span::after, .mobile_menu_button span::before {
+	background: #fa0;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+    position: absolute;
+    top: 0;
+	transition: transform .4s;
+	width: 100%;
+}
+.mobile_menu_button span{transition: background 0s 0.3s;text-indent: -9999px;line-height:0;top:45%;width: 60%; left:20%;height: 10%;}
+.mobile_menu_button span::before { transform:translate(0,200%)}
+.mobile_menu_button span::after {transform:translate(0,-200%)}
+
+
+
+.menu_open .mobile_menu_button span {background: none;
+}
+.menu_open .mobile_menu_button span::before {
+	transform:rotate(-45deg);
+}
+.menu_open .mobile_menu_button span::after {
+	transform: rotate(45deg);
+}
+.mobile_container {overflow: hidden; transition: max-height 0.5s;
+	z-index: 10;height: auto;
+	max-height:0;
+	display: block;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background: #fff; position:absolute; top:0; left:0; right:0;
+}
+.menu_open .mobile_container {
+	max-height:100em;
+}
+#mobile_nav{ display: block;}
+#mobile_nav ul{position: relative;overflow: hidden;}
+#mobile_nav li {border-top: 1px solid #eee;}
+#mobile_nav li a{font-size: 1.2em;color: #999; display: block;text-align: center;padding: 1em 0;}
+
+ul.share_bar {border-top: 1px solid #eee; position:relative; text-align:center;padding: 1em 0;}
+.relative ul.share_bar{border-top:0px;text-align:right;}
+ul.share_bar li {padding: 0 0.3em;}
+
+
+.relative .menu_bar{width:auto;}
+.relative .mobile_menu_button{ display:none;font-size:40px;}
+.relative .mobile_menu_button span,
+.relative .mobile_menu_button span::after,
+.relative .mobile_menu_button span::before{border-radius:50%;}
+.relative .mobile_menu_button span{width:20%;height:20%;top:40%;left: 24%;}
+.relative .mobile_menu_button span::before { transform:translate(120%,110%)}
+.relative .mobile_menu_button span::after {transform:translate(120%,-110%)}
+.relative .mobile_menu_button::after{content: "";display: block; width:40%; height:40%;transform: rotate(45deg);border:3px solid #FA0; border-width:0 0 3px 3px;top: 30%;left: 38%; position:relative}
+
+.relative .mobile_container{ box-shadow:none; max-height:none; background:none; top:auto; bottom:0;}
+.relative ul.share_bar{padding:5px 0;}
+.relative ul.share_bar li{ padding:0;}
+	
+.relative .mobile_container{position: relative;}
+
+}

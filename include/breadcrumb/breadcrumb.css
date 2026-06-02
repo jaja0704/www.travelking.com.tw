@@ -1,0 +1,15 @@
+@charset "utf-8";
+.breadcrumb{font-size:16px;display:block; padding:0.9em 0.3em 0.4em 0.3em;}
+.breadcrumb::after{content:" "; display:block; clear:both;}
+.breadcrumb li{display:inline-block;}
+.breadcrumb li::before{content:">"; display: inline; margin: 0 0.3em}
+.breadcrumb li.bc_first::before{display:none}
+.breadcrumb a{font-weight:normal;color: #360;white-space:nowrap}
+.breadcrumb a:hover{text-decoration: underline}
+@media screen and (max-width:970px) {
+	.breadcrumb {
+	    margin: auto;
+	    padding: 0.6em 3.2em 0.4em 2%;
+	}
+	.breadcrumb li.bc_last{display: none;}
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+.list_detail{font-size:17px;line-height:1.7;}
+.list_detail a{word-break: break-all;word-wrap:break-word;}
+.list_detail h1{ font-size:1.75em; line-height:1.3em; font-weight:normal; margin:0.3em auto 0.25em;}
+.list_detail cite{float:left;font-size:0.85em;vertical-align:inherit;padding:0.3em 0 0.3em 0;font-style:normal;line-height:1.1em;}
+.list_detail cite > span{ margin:0 1em 0 0;padding:0.3em 0 0.3em 0.1em; display:block;}
+.list_detail cite img{ vertical-align: inherit; height:1.2em; }
+.list_detail .NewsSummary{margin:1.05em 0 1.2em 0;padding:0.5em 2%;background:#ffc;}
+.list_detail .grid_list_tripadvisor a{display: flex;align-items: center; color:#000;position: relative;z-index: 5}
+.list_detail .p::after{content:"";clear: both;display: block;}
+.list_detail .p,
+.list_detail p{margin:0.5em 0 1.1em 0;word-wrap:break-word;}
+.list_detail .text{margin:0 auto 1.5em auto;}
+.list_detail .text h3,
+.list_detail .text h4,
+.list_detail .text h5,
+.list_detail .text h6{margin:1.2em 0 0 0}
+.list_detail .icon-clock{vertical-align: middle;margin-right: 0.3em; font-size: 1.2em;}
+.list_detail .othermsg {padding: 1em 0;}
+.list_detail .othermsg2 { margin: 1em 0; padding: 1em; background: #f2f2f2;}
+.list_detail .label{font-size:0.9em;position: relative;margin: 0.2em 0;}
+.list_detail .label a,
+.list_detail .label b{position: relative;display:inline-block;text-align:center;width:3em;background:rgba(0,0,0,0.1);color:#444;transition:background 0.5s,color 0.5s;border-radius:3px;margin:2px 3px 1px 0;font-weight:normal;}
+.list_detail .label a:hover{background:rgba(0,0,0,0.6);color:#fff;}
+.list_detail .grid_label a{z-index:6;}
+
+/* 撥放器圖 */
+#galleria{margin:0 0 2em 0;}
+#galleria .g_main{position: relative;overflow: hidden}
+#galleria .g_main .swiper-slide{flex-direction:column;align-items:stretch;}
+#galleria .g_main .swiper-slide .gpic{background:#444;text-align:center;padding: 58.14% 0 0 0;position: relative;overflow: hidden;}
+#galleria .g_main p{margin:5px 0 15px;}
+#galleria .g_main .swiper-slide img{max-width:100%;object-fit: cover;position:absolute;top:50%;left:50%;max-height: 110%;transform:translate(-50%,-50%)}
+#galleria .g_main .swiper-pagination{display: none;}
+#galleria .g_main .swiper-button-next,
+#galleria .g_main .swiper-button-prev{height:calc(100% - 77.8px);transition:all .3s;background:rgba(0,0,0,0.2)}
+#galleria .g_main .swiper-button-next{right:-50px;}
+#galleria .g_main .swiper-button-prev{left:-50px;}
+#galleria .g_main:hover .swiper-button-next{right:0;}
+#galleria .g_main:hover .swiper-button-prev{left:0;}
+#galleria .g_main .swiper-button-next:hover,
+#galleria .g_main .swiper-button-prev:hover{opacity:1;}
+#galleria .g_main .swiper-button-next.swiper-button-disabled{right:-50px;opacity: 0.7;}
+#galleria .g_main .swiper-button-prev.swiper-button-disabled{left:-50px;opacity: 0.7;}
+#galleria .g_s .swiper-slide{width:72px;background:#000;}
+#galleria .g_s .swiper-slide img{opacity:0.5;transition:opacity .3s;width: 100%;}
+#galleria .g_s .swiper-slide.active-nav img{opacity:1}
+
+.box_ss{margin: 0 0 0.5em 0}
+.box_ss::after{content:" ";clear: both;display: block;}
+.box_ss a{white-space: nowrap}
+.box_ss a::before{content:"［";color: #000}
+.box_ss a::after{content:"］ ";color: #000}
+
+/* */
+
+@media screen and (max-width:970px){
+.list_detail h1{ width:96%;}
+.list_detail cite{ margin:0 0 0.5em 2%}
+.list_detail .NewsSummary {margin: 0.8em 0 1.2em 0;}
+.list_detail .text{width:96%;}
+.list_detail .label{margin: 0.2em 2%;}
+#galleria .g_main .swiper-button-next,
+#galleria .g_main .swiper-button-prev{display:none}
+#galleria .g_main p{margin:5px 5px 15px 5px;}
+
+	/* CSS Document */
+.unfolded{overflow: hidden;position: relative;transition: max-height 3s;
+/* 區塊沒開時多高 */
+	max-height: 15em;
+}
+.unfolded.out{max-height: 900em;}
+
+
+.unfolded::after,
+.unfolded::before{content:" ";display: block;}
+
+
+.unfolded.out::after,
+.unfolded.out::before{display: none;}
+
+
+.unfolded::before{position: absolute;bottom: 0;left: 0; right: 0; 
+/* 漸層高 */
+height: 8em;
+background: -moz-linear-gradient(top,rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.text_b{border-bottom: 1px solid #EEE; width: 100%;
+    bottom: 1.2em;
+    display: block;
+    height: 0;
+    position: absolute;}
+.unfolded:hover:hover .text_b{border-bottom: 1px solid #CCC;}
+
+.unfolded.out .text_b{display: none}
+
+.unfolded::after{cursor: pointer;background: #FFF;content:"展開全文";width:6em;text-align: center; position: absolute;bottom: 0;left:50%;border: 1px solid #ccc;padding: 0.5em 0;margin: 0 0 0 -3em}
+.unfolded:hover:after{background: #F2F2F2;border: 1px solid #999;}
+
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#sidehotel{margin: 0 0 20px 0}
+#sidehotel .grid_list{margin:1em 0 0 0; padding:0; float:none; width:auto;display:flex;align-items:center;}
+#sidehotel .grid_list .grid_pic{flex:0 0 6em;min-height:8em;}
+#sidehotel .grid_list .grid_txt{flex:1 1 auto;height: auto;z-index: auto;}
+#sidehotel .grid_rate{position:relative;top:0;left:0;font-size: 1.1em;}
+#sidehotel .grid_name{font-size:1.15em;margin-bottom:0;color:#069;}
+#sidehotel .grid_p{font-size: 0.9em;}
+#sidehotel .grid_prices{ font-size: 0.803em; float:none;}
+#sidehotel .grid_prices em{ font-size: 1.8em; line-height:1.1em;}
+#sidehotel .grid_beroom{padding:0 0 0.15em 0;position: relative; background:none;width: auto;top:0;left:0; color:#000;line-height:1.6em}
+#sidehotel .grid_station{padding:0 0 0.15em 0;line-height: 1.6em;}
+#sidehotel .grid_station strong{color: #C00;font-weight: normal}
+#sidehotel .grid_list_tripadvisor a{display: flex;align-items: center; color:#000;position: relative;z-index: 5}
+
+#sidepoint{margin: 0 0 20px 0}
+#sidepoint .grid_list{margin:1em 0 0 0; padding:0; float:none; width:auto;display:flex;align-items:center;}
+#sidepoint .grid_list .grid_pic{flex:0 0 6em;min-height:6em;}
+#sidepoint .grid_list .grid_txt{flex:1 1 auto;height: auto;}
+#sidepoint .grid_rate{position:relative;top:0;left:0;font-size: 1.1em;}
+#sidepoint .grid_name{font-size:1.15em;margin-bottom:0;color:#069;}
+#sidepoint .grid_p{font-size: 0.9em;}
+#sidepoint .grid_prices{ font-size: 0.803em; float:none;}
+#sidepoint .grid_prices em{ font-size: 1.8em; line-height:1.1em;}
+#sidepoint .grid_beroom{padding:0 0 0.15em 0;position: relative; background:none;width: auto;top:0;left:0; color:#000;line-height:1.6em}
+#sidepoint .grid_station{padding:0 0 0.15em 0;line-height: 1.6em;}
+#sidepoint .grid_station strong{color: #C00;font-weight: normal}
+
+

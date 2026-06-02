@@ -1,0 +1,252 @@
+@charset "utf-8";
+/*  版本修正資訊  */
+/*  2017-3-21 .gridlists　字改16px */
+/*  2016-10-4 新增 .grid_table 單行用 */
+/*  2015-11-26 h3跟p 補上名稱 降低跑板率 */
+/*  2015-11-10 調整價錢位置 grid_bgcolor顏色 文字置中跑板消除 */
+/*  2015-11-6 新增 .grid_title .grid_bgcolor*/
+.grid_clear{clear:both;}
+
+.gridlists,.gridlists *,.gridlists *:before,.gridlists *:after {-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:bottom;border-collapse:collapse;}
+.gridlists a{text-decoration:none}
+.gridlists { text-align:left; overflow:hidden;font-size:16px;line-height:1.3; font-family:Arial, 'Microsoft JhengHei',PMingLiU, Helvetica, sans-serif;margin:auto;}
+.gridlists.grid_list_center{width:62em;}
+.gridlists.grid_list_center.grid_landscape{width:55.067em;}
+.grid_list{ overflow:hidden;float: left;width:20em;position:relative; background:#FFF; margin:0.3333em; padding:0.3333em;}
+/* .grid_list:hover{box-shadow:2px 2px 5px -2px #000;} */
+.grid_title{ margin:0.5% 0.5% 0;}
+.grid_pic{width:8em; height: 6em;float:left;margin:0 0.3em 0 0; position:relative; z-index:3;background-size:cover;background-position:center center;}
+.grid_pic img{width:100%; height:100%;}
+.grid_txt{overflow:hidden;line-height:1.3em;z-index:3;font-size:0.9333em;position:relative; height:6.43em}
+.grid_list h3 a,
+.grid_list .grid_name a,
+.grid_list h3,
+.grid_list .grid_name{float: none;    margin:0;line-height: 1.3; vertical-align:middle; color:#000; font-weight:normal;}
+.grid_list h3 a:hover,
+.grid_list .grid_name a:hover{ color:#C7000B;}
+.grid_list p a,
+.grid_list p,
+.grid_list .grid_p a,
+.grid_list .grid_p,
+.grid_list .grid_room a,
+.grid_list .grid_room{ overflow:hidden;color:#666; line-height:1.3em;}
+.grid_list p a:hover,
+.grid_list .grid_p a:hover,
+.grid_list .grid_room a:hover{color:#C7000B;}
+.grid_address a,
+.grid_address{overflow:hidden;color:#666;}
+/* 確定grid_rate都補上後這段可刪除 */
+.grid_list .grid_address a:hover{color:#C7000B;}
+.grid_prices,.grid_booking{position:absolute;bottom:0em; right:0em; }
+.grid_booking + .grid_prices{right:4em; }
+.grid_rate .grid_booking,
+.grid_rate .grid_prices{ float:right;position: relative; bottom:0em; right:0em; }
+/*  */
+.grid_types{ display:inline-block;font-size: 0.9em; color:#666;width: 100%;}
+.grid_before_price{ display:inline-block;font-size: 0.9em; color:#666;text-decoration: line-through;}
+.grid_prices{ margin:0 0.2em 0 0; font-size: 0.9em;line-height: 1.5em;color:#C7000B}
+.grid_prices em{font-style:normal;font-size: 1.2em;} 
+.grid_prices a{color:#C7000B} 
+.grid_booking{display:block; background-color:#42A9D7; color:#FFF; width:3.5em; text-align:center;z-index:3; border-radius:0.3em; line-height:1.5em}
+.grid_booking:hover{ background-color:#069;}
+.grid_rate{position:absolute; bottom:0em; right:0em; }
+.grid_rate .grid_booking,
+.grid_rate .grid_prices{ float:right;}
+.grid_day{ font-size:0.857em; position:absolute; bottom:0em; right:0em;}
+.grid_day a,
+.grid_day{ overflow:hidden;color:#666;}
+.grid_station{ font-size:0.857em;   padding:0;}
+.grid_station_icon{ float: left;border-radius:0.2em; margin:0 0.2em 0 0; display:block; width:1.4em; height:1.4em;background-color:#666;background-image:url(../images/grid_station.png); background-repeat:no-repeat; background-size:auto 1.1em; background-position:0.2em center;}
+.grid_station_069 .grid_station_icon{ background-color:#069; color:#FFF;}
+.grid_station_c93 .grid_station_icon{ background-color:#c93; color:#FFF;}
+.grid_station_c03 .grid_station_icon{ background-color:#c03; color:#FFF;}
+.grid_station_096 .grid_station_icon{ background-color:#096; color:#FFF;}
+.grid_station_fc3 .grid_station_icon{background-color:#fc3; color:#000;}
+.grid_list_more{color:#C7000B}
+.grid_more_right{ line-height:1.5em; clear:both; width:100%; text-align:right;color:#666;}
+.grid_more_center{line-height:1.5em;clear:both; width:100%; text-align: center; background-color:#42A9D7;color:#FFF;}
+.grid_more_right:hover{color:#000;}
+.grid_more_center:hover{background-color:#069;}
+.grid_beroom{font-size:0.857em; line-height:1.3;z-index:3; position:absolute; top:0.6em; left:0; color:#fff; background:rgba(0,0,204,0.7); padding: 0 0.5em;}
+.grid_border_solid .grid_beroom,
+.grid_margin0 .grid_beroom{ top:1.1em;}
+.grid_today{ background:rgba(204,0,0,0.7);color:#fff;}
+.grid_hday{ background:rgba(0,0,204,0.7);color:#fff;}
+
+
+.grid_link{position:absolute; z-index:4; top:0; left:0; width:100%; height:100%;}
+/* .grid_txt a,
+.grid_pic a::before,
+.grid_link::before{vertical-align: inherit; padding-right:0.3em;  display: inline-block; background-image:url(../images/link_i.png); background-repeat: no-repeat; background-position:100% -12em; background-size: 0.6em auto;} */
+.grid_txt a.grid_booking{padding-right:0; }
+.grid_txt a:hover,
+.grid_pic a:hover:before,
+.grid_link:hover:before{ background-position:100% 0; }
+.grid_pic a::before{content:" "; font-size:1.5em;position:absolute; top:0; right:0; width:1em; height:1em; z-index:2}
+
+.grid_link::before{content:" "; font-size:1.6em;position:absolute; top:0%;left:0%;z-index:5;width: 100%;height: 100%;}
+.grid_link_animation .grid_link::before{ top:5%;left:5%;border:1px solid rgba(0,0,0,0);width: 90%;height: 90%;
+transition: border 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, top 0.3s ease-out, left 0.3s ease-out;
+-webkit-transition:border 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, top 0.3s ease-out, left 0.3s ease-out;
+-moz-transition:border 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, top 0.3s ease-out, left 0.3s ease-out;}
+.grid_link_animation .grid_link:hover:before{ border:1px solid rgba(0,0,0,0.5);top:0%;left:0%;width:100%;height:100%;}
+.grid_pointkind_icon{ font-size:1.6em; margin:-0.2em 0 -0.2em 0; vertical-align:middle;}
+.grid_icon{display:inline-block;*display:inline;width:1em; height:1em; background:url(../images/hotellist_icon.png) no-repeat center 0; background-size: 2em auto; font-size:1.6em; margin:-0.2em 0 -0.2em 0;  position:relative;vertical-align: middle;}
+.grid_icon_hotel{ background-position: 0 0;}
+a:hover .grid_icon_hotel{ background-position: -1em 0;}
+.grid_icon_room{ background-position: 0 -1em;}
+a:hover .grid_icon_room{ background-position: -1em -1em;}
+.grid_icon_address{ background-position: 0 -2em;}
+a:hover .grid_icon_address{ background-position: -1em -2em;}
+.grid_icon_prices{ background-position: 0 -3em;}
+a:hover .grid_icon_prices{ background-position: -1em -3em;}
+.grid_icon_hotel{ background-position: 0 0;}
+.grid_list p a,
+.grid_list .grid_p a{ vertical-align: inherit; padding-right:0; background:none;}
+
+.grid_stars{ display:inline-block; font-size:1em; background:url(../images/grid_stars.svg); background-size:10em 2em; height:1em;vertical-align: middle; width:5em;}
+.grid_stars45{background-position:0em bottom}
+.grid_stars40{background-position:-1em 0}
+.grid_stars35{background-position:-1.06em  bottom}
+.grid_stars30{background-position:-2em 0}
+.grid_stars25{background-position:-2em bottom}
+.grid_stars20{background-position:-3em 0}
+.grid_stars15{background-position:-3em bottom}
+.grid_stars10{background-position:-4em 0}
+.grid_stars05{background-position:-4em bottom}
+.grid_list_tripadvisor{font-size:0.857em;text-align: left; line-height: 1.8em;}
+.grid_list_tripadvisor img {margin: 0 0.3em 0 0;border:0;vertical-align:sub;height:auto;width:8.5em}
+.grid_list_tripadvisor a {color: #069;text-decoration: none}
+.grid_list_tripadvisor a:hover {color: #000;text-decoration: underline}
+
+.grid_border1 .grid_list::before {content:" ";position:absolute; z-index:2; top:0; left:0; width:100%; height:100%;border:1px solid #999;}
+.grid_border2 .grid_list::before {content:" ";position:absolute; z-index:2; top:0; left:0; width:100%; height:100%;border:2px solid #999;}
+.grid_list:hover:before{ border-color:#666;}
+.grid_border_solid .grid_list{width:20.667em; margin:-1px 1px 1px -1px;border-top:1px solid #999;border-left:1px solid #999; padding:0.6666em}
+.grid_border_solid .grid_list:hover{box-shadow: none;}
+.grid_margin0 .grid_list{margin:0;width:20.667em;padding:0.6666em}
+.grid_margin0 .grid_list:hover{box-shadow: none;}
+
+.grid_landscape .grid_list{padding:0.3333em;font-size:1em;line-height:1.3em;width:13.1em;}
+.grid_margin0.grid_landscape .grid_list{padding:0.6666em;width:13.7666em;}
+.grid_landscape .grid_pic{ width:100%;height:9.3em;float: none; margin:0 0 0.3em 0;}
+
+.grid_bgcolor{margin: 0.5%;background:#e7e7e7; color:#000; padding:0.5% 0}
+
+.grid_landscape.grid_border_solid .grid_list{width:13.76666em;}
+
+.grid_prices_focus .grid_list p,
+.grid_prices_focus .grid_list .grid_p,
+.grid_prices_focus .grid_address{ font-size:0.9em; line-height:1.3em;}
+.grid_prices_focus .grid_prices{}
+.grid_prices_focus .grid_prices em{ vertical-align: text-bottom;font-size:1.8em ; color:#C7000B}
+.grid_prices_focus .grid_booking{width:3.2em;}
+
+.grid_name_focus .grid_list h3,
+.grid_name_focus .grid_list .grid_name{ font-size:1.2em; line-height:1.2em;}
+.grid_name_focus .grid_list p,
+.grid_name_focus .grid_list .grid_p,
+.grid_name_focus .grid_address{ font-size:0.9em; line-height:1.3em;}
+
+.grid_room_focus .grid_list h3 a,
+.grid_room_focus .grid_list h3,
+.grid_room_focus .grid_list .grid_name a,
+.grid_room_focus .grid_list .grid_name{color:#666;line-height:1.2em;}
+.grid_room_focus .grid_list p,
+.grid_room_focus .grid_list .grid_p,
+.grid_room_focus .grid_address,
+.grid_room_focus .grid_room{color:#000; font-size:1.1em; line-height:1.25em;}
+.grid_room_focus .grid_list p a,
+.grid_room_focus .grid_list .grid_p a,
+.grid_room_focus .grid_address a,
+.grid_room_focus .grid_room a{color:#000;}
+
+.grid_list.grid_size_P{ width:40.6667em;}
+.grid_border_solid .grid_list.grid_size_P,
+.grid_margin0 .grid_list.grid_size_P { width:41.3333em;}
+.grid_list.grid_size_4{ width:40.6667em;}
+.grid_list.grid_size_4 .grid_pic{width:49%; height:13.33em}
+.grid_list.grid_size_4 .grid_txt {height:14.27em;}
+.grid_border_solid .grid_list.grid_size_4,
+.grid_margin0 .grid_list.grid_size_4{ width:41.3333em;}
+.grid_border_solid .grid_list.grid_size_4 .grid_txt {height:14.35em;}
+.grid_margin0 .grid_list.grid_size_4 .grid_txt {height:14.26em;}
+.grid_list.grid_size_L .grid_pic{ width:100%;float: none; height:13.33em; margin:0 0 0.3em 0;}
+.grid_list.grid_size_L .grid_txt {height:7.54em;}
+.grid_border_solid .grid_list.grid_size_L .grid_txt {height:7.666em;}
+.grid_list.grid_size_w100{ width:98%; float:none;margin:0.5% 0 0.5% 1%;}
+.grid_list.grid_size_w50{ width:48.5%; margin:0.5% 0 0.5% 1%;}
+.grid_list.grid_size_w33{font-size:0.9333em; width:32%; margin: 0.5% 0 0.5% 1%;}
+.grid_list.grid_size_S{ width:13.1em;}
+.grid_list.grid_size_S .grid_pic{ width:5.31em; height:3.54em;}
+.grid_list.grid_size_S .grid_txt {height:3.8em;}
+.grid_list.grid_simplify{font-size:1em;}
+.grid_list.grid_simplify .grid_pic{font-size:0.665em;}
+.grid_list.grid_simplify .grid_txt{height:4.3em;}
+.grid_list.grid_simplify .grid_list h3 a,
+.grid_list.grid_simplify .grid_list h3,
+.grid_list.grid_simplify .grid_list .grid_name a,
+.grid_list.grid_simplify .grid_list .grid_name{ font-size:1.3em}
+
+.grid_table{ display:table; width:100%;}
+.grid_table .grid_list{display: table-cell; width:auto; float:none;}
+
+
+.grid_landscape .grid_list.grid_size_L .grid_txt {height:24.63em;}
+.grid_landscape .grid_list.grid_size_L .grid_pic {height:9.em;}
+.grid_border_solid.grid_landscape .grid_list.grid_size_L .grid_txt{height:24.4em;}
+.grid_landscape .grid_list.grid_size_P .grid_pic{height:15.62em;float: left; margin:0 0.3em 0 0;width:52%;}
+.grid_border_solid.grid_landscape .grid_list.grid_size_P .grid_pic,
+.grid_margin0.grid_landscape .grid_list.grid_size_P .grid_pic{width:52.8%;}
+.grid_landscape .grid_list.grid_size_P .grid_txt {height:16.7em;}
+.grid_border_solid.grid_landscape .grid_list.grid_size_P .grid_txt{height:17.21em;}
+.grid_landscape .grid_list.grid_size_4{ width:26.8667em;}
+.grid_border_solid.grid_landscape .grid_list.grid_size_4,
+.grid_margin0.grid_landscape .grid_list.grid_size_4{ width:27.55em;}
+.grid_landscape .grid_list.grid_size_4 .grid_pic{height: 19.667em; width:100%;float: none; margin:0 0 0.3em 0;}
+.grid_landscape .grid_list.grid_size_4 .grid_txt {height:13.52em;}
+.grid_border_solid.grid_landscape .grid_list.grid_size_4 .grid_txt {height:13.35em;}
+
+.grid_landscape .grid_list.grid_size_w50 .grid_pic,
+.grid_landscape .grid_list.grid_size_w50 .grid_pic img{height: auto; }
+
+.grid_landscape .grid_list.grid_size_w100{ width: auto; float:none;}
+.grid_landscape .grid_list.grid_size_w100 .grid_pic{height:15.62em;float: left; margin:0 0.3em 0 0;width: 20.8em;}
+.grid_landscape .grid_list.grid_size_w100 .grid_txt {height:16.7em;}
+.grid_landscape .grid_list.grid_size_S{ width:8.519em;}
+.grid_landscape .grid_list.grid_size_S .grid_pic{ width: 100%; height:5.9em;}
+.grid_landscape .grid_list.grid_size_S .grid_txt {height:4.02em;}
+
+
+
+
+/* 上面是比1024小時 */
+@media (max-width: 930px), handheld and (orientation: landscape)  {
+	.gridlists.grid_list_center,
+	.gridlists.grid_landscape.grid_list_center{ width: 41.3333em;}
+}
+@media screen and (max-width:670px){
+	.gridlists.grid_list_center{ width:20.666667em;}
+	.gridlists.grid_list_center.grid_landscape{ width:27.53333em;}
+}
+@media screen and (max-width:500px){
+	.gridlists.grid_list_center.grid_landscape{ width:13.76667em;}
+}
+@media screen and (min-width: 1083px) {
+	.gridlists.grid_list_center.grid_landscape{ width:68.8667em;}
+ }
+@media screen and (min-width: 1270px) {
+	.gridlists.grid_list_center,
+	.gridlists.grid_list_center.grid_landscape{ width:82.6667em;}
+ }
+@media screen and (min-width: 1570px) {
+	.gridlists.grid_list_center.grid_landscape{ width:96.4em;}
+	.gridlists.grid_list_center{ width:103.3333em;}
+ }
+@media screen and (min-width: 1702px) {
+	.gridlists.grid_list_center.grid_landscape{ width:110.1333em;}
+}
+@media screen and (min-width: 1880px) {
+	.gridlists.grid_list_center,
+	.gridlists.grid_list_center.grid_landscape{ width:124em;}
+}

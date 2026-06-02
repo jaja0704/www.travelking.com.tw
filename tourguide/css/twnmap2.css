@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* 版位 */
+.city_main{float:left;width:760px;}
+.city_side{width:199px;float:right;}
+
+.h1{font-size:1.75em; font-weight:normal;line-height:1.3em;margin:0 0 0.25em 0.3em; float:left;}
+
+.sub{margin:1em 0 1em 0;float:right;overflow:hidden;font-size:0.9em;position:relative;}
+.sub li{float:left;border-left:1px solid #ccc;position:relative;left:-1px;}
+.sub li a{display:block; margin:0 0.5em;text-align:center;color:#444;}
+.sub li a:hover{color:#360;}
+
+.table{overflow:auto;margin:0.9em 0; padding:0 0.6em;width:100%}
+.table table{border-collapse:collapse;min-width:50em;margin:0; width:100%;}
+.table th,
+.table td{ border:1px solid #ccc; padding:0.5em; vertical-align:middle;}
+.table th{ background:#F4F4EF}
+.table td{ background:#F9F9F9}
+.fold .box{font-size: 1.05em; padding:0.6em}
+/*.twcity .more { font-size:1em; line-height:1.5em; text-align:right; padding:0.1em 0.5em 0 0;}
+.twcity .more a{color:#069;}
+.twcity .more a::after { content:" "; display:inline-block; width: 0; height: 0; line-height: 0; border: 0.3em dashed #069; margin: 0 0 0 0.3em; 
+border-left-style: solid; 
+border-right: none; 
+border-bottom-color: transparent; 
+border-top-color: transparent;}*/
+
+/* top */
+.bordowm{border-bottom:2px solid #ccc;background:#eceae3;position:relative;padding:0.3em 0.5em;margin-bottom:0.5em;}
+.bordowm::after{content:" ";display:block;clear:both;}
+.ds{line-height:1.6em;color:#000;float:left;}
+.ds a{color:#000;}
+.Social_area{float:left;margin:0.1em 0 -0.2em 0.5em;}
+
+.search{float:right;color:#226000;font-size:0.9em;}
+.search span{display:inline-block;margin:0 0 0 0.5em;}
+.search span::before{content:" ";display:inline-block;width:0;height:0;line-height:0;border:0.3em dashed #666;margin:0 0.3em 0 0;
+border-left-style:solid;
+border-right:none;
+border-bottom-color:transparent;
+border-top-color:transparent;}
+.search input,.search select{font-size:1em;color:#555555;border:1px solid #999;}
+.search input{padding:0.1em 0.3em;}
+.search .put{border:0px;text-align:center;background:#069;color:#fff;border-radius:0.3em;}
+.search .put:hover{background:#06c;}
+
+/* nav */
+.twcity_nav{display:block;text-align:center;font-size:0.9em;}
+.twcity_nav li{display:inline;margin:0 0.5em;}
+.twcity_nav li a{color:#f60;}
+.twcity_nav li a::before{content:" ";display:inline-block;width:0;height:0;line-height:0;border:0.2em dashed #f60;margin:0 0.3em 0 0;border-radius:50%;vertical-align:middle;}
+.twcity_nav li a:hover{color:#000;}
+.twcity_nav li a:hover:before{border-color:#000;}
+
+/* map */
+.map{margin:0 0 1.5em 0; position:relative;text-align:center;}
+.svg_map {position:relative;overflow: auto}
+.map .title{margin:0 0 0.2em 0; text-align: left;}
+.map .title b{background-color:#fff; border-bottom:2px solid #ccc;padding:0 0.5em;}
+.position h4{ color:#069}
+.mapsize{display:none;position: absolute;top: 0.5em;left: 0.5em;border-top:1px solid #ccc;overflow: hidden}
+.mapsize a{ display:block;background:#FFF; color:#666;height:35px;border:1px solid #ccc; border-width:0 1px 1px 1px;width:35px;position: relative;overflow: hidden}
+.mapsize a::before{position: absolute;top:15px;left:30%; content:" ";display:block;background:#666;width:40%;height:3px;}
+.mapsize a.mapsize_l::after{position: absolute;top:30%;left:15px;content:" ";display:block;background:#666;width:3px;height:40%;}
+/* 介紹 */
+/*.introduction{line-height:1.8em;margin:1.1em auto; padding: 0 0.6em;text-align:left;border-bottom:1px dotted #CCCCCC;}
+.introduction p{margin:0;padding:0;color:#666666;}
+.introduction a{color:#000000;text-decoration:underline;}
+.introduction a:hover{color:#666666;text-decoration:underline;}
+.introduction h4{font-size:1.1em;line-height:1.5em;font-weight:normal;color:#0099CC;margin:0;padding:1em 0 0.1em 0;}
+.introduction h4 a{color:#0099CC;text-decoration:underline;}
+.introduction h4 a.hover{color:#0099CC;}*/
+
+.main .adsbygoogle{ margin:0 0 1.4em 0}
+/* 行程 */
+.news_route{margin:1.1em auto;overflow:hidden;}
+.news_route ul{margin:0 0.6em;padding:0; line-height:1.8em;overflow:hidden;color:#999;}
+.news_route li{float:left; width:50%;}
+.news_route li a{display:block;color:#000;text-decoration:underline;text-align:left;}
+.news_route li a::before{content:" ";display:inline-block;width:0;height:0;line-height:0;border:0.3em dashed #000;margin:0 0.3em 0 0;vertical-align:middle;
+  border-left-style: solid;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-top-color: transparent;}
+.news_route li a:hover{color:#360;}
+.news_route .more{text-align:right;}
+.news_route .more a{display:block;font-size:12px;line-height:16px;background:url(https://www.travelking.com.tw/tourguide/twnmap/images/icon_06.gif) no-repeat left center;width:auto;float:right;margin:0px 10px 0px auto;padding:0px 0px 0px 15px;overflow:hidden;color:#333;text-decoration:none;}
+.news_route .more a:hover{color:#f33;text-decoration:underline;}
+
+
+/* 推薦飯店 */
+.hothotel {margin:0 0 1.4em 0}
+.hothotel .grid_list{ width:50%; margin:2% 0 0 0; padding:0;}
+.hothotel .grid_rate{ left:0; bottom:0.8em;}
+.hothotel .grid_prices{ font-size: 0.803em; float:left;}
+.hothotel .grid_prices em{ font-size: 1.8em; line-height:1.1em;}
+.hothotel .grid_name{ font-size: 1.15em; margin-bottom:0.1em;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;color:#069;}
+.hothotel .grid_txt{padding:0.8em 0 0;}
+.hothotel .grid_p{font-size: 0.9em;}
+.hothotel .grid_room{ font-size: 1.05em;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.hothotel .grid_list .grid_rate{ font-size: 1.1em;}
+.hothotel .grid_beroom{background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;width:120px;top: 0; line-height:1.8em}
+.hothotel .grid_beroom.grid_today{background: rgba(204, 0, 0, 0.7) none repeat scroll 0 0;width: auto;top:0.6em;}
+
+/* 推薦小吃 */
+.up_eat{margin:1em auto 2.5em auto;}
+
+/* 推薦特產 */
+.products{margin:1em auto 2em auto;}
+.products p{}
+
+/* 推薦特產 */
+.folk{margin:1em auto 2.5em auto;}
+
+
+/* 景點列表 */
+.tourgudes{margin:0 auto 1.4em auto;}
+.tourgudes h4{font-size:1.05em}
+.tourgudes ul{padding:0.3em 0 0.7em 0; margin: 0 0 0.7em 0; border-bottom: 1px solid #ccc; line-height:1.5em;}
+.tourgudes ul::after{content:" ";display:block;clear:both;}
+.tourgudes li{ float:left; width:25%;}
+.tourgudes li a{padding: 0 1em 0 0;display:block;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+
+.r_up_hotel .hotel{text-align:center; padding:0.5em 0.8em; border-top:1px solid #ccc;}
+.r_up_hotel .pic{margin:0px;padding-bottom:0.3em;}
+.r_up_hotel .text a{color:#069;text-decoration:none;}
+.r_up_hotel .text a:hover{color:#666;text-decoration:underline;}
+
+#r_near_hotel .grid_list{ margin:0;border-top:1px solid #ccc;padding:0.5em 0.4em; width:100%;}
+#r_near_hotel .grid_pic{ font-size:0.6em; margin-bottom:0.3em;}
+#r_near_hotel .grid_txt{height:auto;}
+#r_near_hotel .grid_p{font-size:0.86em; line-height:1.5em;}
+#r_near_hotel .grid_address{font-size:0.8em;}
+#r_near_hotel .grid_name{ color:#069;}
+
+/* 新聞 */
+.related_news{ font-size:15px;}
+.related_news ul{ margin:0.3em 0 1.5em 0; line-height:1.5em;}
+.related_news ul::after{content:" ";display:block;clear:both;}
+.related_news ul li{border-bottom:1px dotted #CCCCCC;}
+.related_news li a{ color:#000; display:block; padding:0.5em 0.5em 0.5em 1.2em;}
+.related_news li a::before{content:" ";display:inline-block;width:0;height:0;line-height:0;border:0.15em dashed #666;margin:0 0.3em 0 -0.6em;vertical-align:middle; position:relative;}
+.related_news ul li a:hover{color:#FF6600;}
+
+.Social_area img{border:none;margin:0px 2px 0px 0px;}
+.point{margin:0.5em 0 0.2em 0;}
+.point .swiper-slide{width:15em;}
+.point.gridlists .swiper-container{margin:0.7em 0;}
+.point.gridlists .grid_list{width:100%;margin:0;padding:0;}
+.point.gridlists .grid_pic{float:none;width:100%;height:10em;}
+.point.gridlists .grid_name{margin:0.3em 0.3em 0.5em 0.3em;}
+
+#mappic p{ padding:0.5em 0.5em 1em 0.5em; line-height:1.8em;}
+
+.svg_twmap { font-size:12px;
+  display:block;
+  width:100%;margin: 0 auto;
+  stroke: #360;
+  fill: currentColor;
+  stroke-width:0.05;
+  stroke-dasharray: 5, 0;transition:width 0.5s,margin-bottom  0.5s;
+}
+.line{fill:none;stroke:#000000;stroke-miterlimit:10;}
+.svgbackground{fill:#dcf4f8;stroke-width: 0;}
+.periphery .svgbackground{fill:#FFF;stroke:#ccc;}
+text{stroke-width:0;fill:#999;writing-mode:tb}
+.periphery,
+.focal{stroke-width:0.5px;}
+.periphery{fill:#fff;stroke:#ccc;}
+.focal a{fill:#d8e47d; stroke: #360;}
+.focal a:hover{fill:#d0de69;}
+.focal text{fill:#360;writing-mode:inherit;}
+.f28{font-size:28px;}
+.map_point circle{fill:#FFFFFF;stroke:#FF0066;stroke-width:1.2;stroke-miterlimit:10;}
+.map_point polyline,
+.map_point line{stroke-width:0.3;fill:none;stroke:#000;}
+.map_point text{fill:#666;writing-mode:inherit;}
+.map_point a text{font-size: 10px;fill:#000;}
+.map_point a text.stext{font-size:9px;}
+.map_point g:hover circle,
+.map_point a:hover circle{stroke:#c00;fill:#f00;}
+.map_point g:hover polyline,
+.map_point g:hover line{stroke-width:0.6;}
+.map_point a:hover text{fill:#c00;}
+.map_link {fill:#51930a;}
+.map_link.map_link_color2 {fill:#2c708c;}
+.map_link text{fill:#fff;writing-mode:inherit;}
+
+
+.googlemapico{position:absolute;top:10px;right:10px;width: 90px;height:90px;border: 1px solid #FFF;box-shadow: 2px 2px 5px #000}
+.googlemapico a::before{height: 100%;vertical-align: middle; text-align:center;content:"　　開啟　　Google Map";display: block;position: absolute;left:0;right:0;top:0;line-height:1.5em;font-size: 12px;padding:29% 0 0 0;color: #fff;opacity: 0; background: rgba(0,0,0,0.5);transition:opacity 0.5s;}
+.googlemapico:hover a::before{opacity:1; }
+.googlemapico img{width: 100%;height: 100%;}
+
+@media screen and (max-width:970px) {
+.city_main,
+.city_side{float: none;width: auto;}
+.tourgudes li{float: none;width: auto;}
+/*.map{display:none}*/
+.search{display:block;float: none;width: auto;}
+.search::before{content:" ";display:block;clear:both;}
+.search span{ display:block; margin:0.3em 0;}
+.twcity_nav{display:none}
+.twcity_nav li{ display:block;}
+.news_route li,
+#guide-hotelad .grid_list{float: none;width: auto;}
+/*.table{font-size:0.8em;}
+.bordowm{ font-size:0.8em}
+.twcity .title{ font-size:0.87em;}
+.city_main .box{font-size:0.8em;}
+.r_up_hotel .hotel{font-size:0.85em;}
+.related_news ul{font-size:0.8em;}
+.news_route ul{font-size:0.8em;}*/
+.fold{ margin:0.5em 0;}
+.fold > ul,
+.fold .box,
+.fold .gridlists,
+.fold .table{ display:none;}
+.fold.fold_open > ul,
+.fold.fold_open .box,
+.fold.fold_open .gridlists,
+.fold.fold_open .table{ display: block; margin-bottom:1.5em;}
+.fold .title a::before,
+.fold .title b::before{content:" ";display:inline-block;width:0;height:0;line-height:0;border:0.3em dashed #666;
+border-top-style: solid; 
+border-bottom: none; 
+border-left-color: transparent; 
+border-right-color: transparent;margin:0 0.3em 0 0;vertical-align:middle;}
+.fold.fold_open .title a::before,
+.fold.fold_open .title b::before{border:0.3em dashed #666;
+border-bottom-style: solid; 
+border-top: none; 
+border-left-color: transparent; 
+border-right-color: transparent;}
+.mapsize{display:block;}
+	
+.googlemapico{width: 80px;height: 80px;}
+.jpg_map+.googlemapico{width: auto; height: auto;border:1px solid #998e70;box-shadow:none;}
+.jpg_map+.googlemapico a::before{position:relative;font-size:15px;color:#000;background:#f0ede5;padding: 0 1em;}
+
+.jpg_map,
+.jpg_map+.googlemapico img{display:none;}
+#sidehotel{display: none}
+}
+@media screen and (min-width:1180px){
+.city_main{width:890px;}
+}

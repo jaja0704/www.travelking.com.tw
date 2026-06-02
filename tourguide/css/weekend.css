@@ -1,0 +1,25 @@
+@charset "utf-8";
+#weekend .title{margin:0 0 0.8em 0;} 
+#weekend{ position:relative; margin:0 0 2.5em 0}
+#weekend .grid_pic{ margin:0.5em 0 0 0.5em; height:8.3em; overflow:hidden;}
+#weekend .grid_pic img{ width:auto;}
+#weekend .grid_list{ border:1px solid #ccc; margin:0; padding:0;width:100%;font-size:1.1em;}
+#weekend .grid_name{color:#069; font-size:1.2em;}
+#weekend .grid_txt{height:auto; padding:0.5em}
+#weekend .grid_address{ font-size:0.9em;}
+#weekend .swiper-slide {width:32em;}
+#weekend .grid_p{ border-top:1px solid #CCC; margin:0.5em 0 0 0; padding:0.5em 0 0 0;}
+
+.side #weekend .swiper-slide{width:100%;}
+.side #weekend .grid_pic{float:none;width:100%;margin:0;height: auto;}
+.side #weekend .grid_pic img{width: 100%;}
+
+@media screen and (max-width:970px) {
+
+#weekend .title{margin:0 0 0.5em 0;} 
+#weekend .grid_pic,
+#weekend .swiper-button-prev,
+#weekend .swiper-button-next{display:none;}
+.side #weekend .grid_pic{display:block;}
+
+}
